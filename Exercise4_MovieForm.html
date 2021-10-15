@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Mireia PZ">
+        <meta name ="description" content="Curso de HTML">
+        <meta name="keywords" content="HTML, JAVASCRIPT, CSS, WEB">
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <title>Encuesta cinematográfica</title>
+    </head>
+    
+    <body>
+        <div id="contenedor">
+            <form id="formulario" name="formulario" method="post">
+                <fieldset id="DatosPersonales">
+                    <legend>Datos personales</legend>
+                    <label for="Nombre">Nombre:</label>
+                    <input id="Nombre" name="Nombre" type="text">
+                    <label for="Apellidos">Apellidos:</label>
+                    <input id="Apelidos" name="Apellidos" type="text">
+                    <label for="DNI">DNI:</label>
+                    <input id="DNI" name="DNI" type="text">
+                    <label for="Edad">Edad:</label>
+                    <input id="Edad" name="Edad" type="text">
+                    <label for="Sexo">Sexo:</label>
+                    <select id="Sexo" name="Sexo">
+                        <option value="H">Hombre</option>
+                        <option value="M">Mujer</option>
+                    </select>
+                </fieldset>
+                <fieldset id="MejorPelicula">
+                    <legend>Mejor Película</legend>
+                    <input name="MejoresPeliculas" type="radio" value="A">Centauros del desierto
+                    <input name="MejoresPeliculas" type="radio" value="B">El hombre que mató a Liberty Valance
+                    <input name="MejoresPeliculas" type="radio" value="C">Río Rojo
+                </fieldset>
+                <fieldset id="Selecciona">
+                    <legend>Selecciona las películas que hayas visto</legend>
+                    <input name="Check1" type="checkbox" value="1">Río Bravo
+                    <input name="Check2" type="checkbox" value="2">El último tren a Gun Hill
+                    <input name="Check3" type="checkbox" value="3">Sólo ante el peligro
+                    <input name="Check4" type="checkbox" value="4">Misión de audaces
+                    <input name="Check5" type="checkbox" value="5">El sargento negro
+                </fieldset>
+                <fieldset id="Argumento">
+                    <legend>Argumento de tu película preferida</legend>
+                    <textarea rows="10" cols="40"></textarea>
+                </fieldset>
+            </form>
+        </div>
+        <div id="calificacion">Película no apta para menores de 16 años</div>
+    </body>
+</html>
